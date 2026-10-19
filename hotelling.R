@@ -16,5 +16,5 @@ hotelling<-function(sada1,sada2){
   p<-ncol(sada1)
   F<-((n1+n2-p-1)/((n1+n2-2)*p) )*T
   pf<-pf(F,p,df2=n1+n2-p-1)
-  return(1-pf)
+  return(as.numeric(1-pf))
 }
