@@ -18,7 +18,7 @@ tabesh<-function(sada1,sada2){
   else if(d1*d2<0){
     S1=X1-Y1
     S2=X2-Y2
-    return(wilcox.test(S1,S2))
+    return(wilcox.test(S1,S2)$p.value)
   }
   else if ((d1==0&d2!=0)){
     return(wilcox.test(Y1,Y2)$p.value)
