@@ -23,6 +23,6 @@ cramer<-function(sada1,sada2){
       ynorma<-ynorma+sqrt((Y1[i]-Y1[j])^2+(Y2[i]-Y2[j])^2)
     }
   }
-  c<-(m*n/(m+n) * (((2/(m*n)) *norma)-((1/m^2) *(xnorma))-((1/n^2) * (ynorma))))
+  c<-(m*n/(m+n) * (((2/(m*n)) *norma/2)-((1/m^2) *(xnorma/2))-((1/n^2) * (ynorma/2))))
   return(c)
 }
