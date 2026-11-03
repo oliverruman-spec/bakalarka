@@ -1,4 +1,4 @@
-cramer<-function(sada1,sada2){
+cramer_stat<-function(sada1,sada2){
   m<-nrow(sada1)
   n<-nrow(sada2)
   X1<-sada1[,1]
